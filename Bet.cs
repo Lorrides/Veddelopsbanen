@@ -8,14 +8,21 @@
 
         public string GetDescription()
         {
-
-            return  ("hvem plaserte penger");
+            string description = "";
+            description = this.Bettor.Name + " bets " + this.Amount + " kroner på hund #" + Dog;
+            return  description;
         }
 
-        public int PayOut (int Winner)
+        public int PayOut (int winner)
         {
-            return (1 /*hvor mye blei betta */);
+            if (Dog == winner)
+            {
+                return this.Amount;
+            }
+            else
+            {
+                return -this.Amount;
+            } 
         }
-
     }
 }
