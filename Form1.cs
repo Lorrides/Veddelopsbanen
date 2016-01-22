@@ -12,9 +12,21 @@ namespace Veddeløp
 {
     public partial class Form1 : Form
     {
+        Greyhound[] GrreyhoundArray = new Greyhound[4];
+        Guy[] GuysArray = new Guy[3];
+        Random MyRandomizer = new Random();
+
+
+
         public Form1()
         {
             InitializeComponent();
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
